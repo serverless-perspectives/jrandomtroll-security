@@ -1,0 +1,16 @@
+version:  0.1
+
+phases:
+  install:
+    commands:
+    
+  build:
+    commands:
+      # Deploy Security
+      - serverless deploy
+  post_build:
+    commands:
+      # Remove pipelines
+      # USE WITH EXTREME CAUTION!
+      # Read and understand https://pariveda.atlassian.net/wiki/x/OMLbBQ before proceeding
+      #- serverless remove
